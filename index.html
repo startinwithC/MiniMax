@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniMax</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgl8 {
+        margin-left: 8px;
+      }
+      .mgl20 {
+        margin-left: 20px;
+      }
+      .mgl50 {
+        margin-left: 50px;
+      }
+      .mgl120 {
+        margin-left: 120px;
+      }
+
+      .mgt50 {
+        margin-top: 50px;
+      }
+      .mgt5 {
+        margin-top: 5px;
+      }
+      .mgt10 {
+        margin-top: 10px;
+      }
+      .mgt20 {
+        margin-top: 20px;
+      }
+      .baise {
+        background-color: white;
+      }
+      .yuanjiao {
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body class="flex1 baise">
+    <!--第一部分-->
+    <div class="flex flex1 mg8">
+      <!--图标-->
+      <div class="mgt5">
+        <img src="Pictures/001.webp" width="100px" height="20px" />
+      </div>
+      <!--文字-->
+      <div class="mgl50" style="height: 20px; font-size: large">研究</div>
+      <div class="mgl50" style="height: 20px; font-size: large">产品</div>
+      <div class="mgl50" style="height: 20px; font-size: large">开放平台</div>
+      <div class="mgl50" style="height: 20px; font-size: large">新闻动态</div>
+      <div class="mgl50" style="height: 20px; font-size: large">关于我们</div>
+    </div>
+    <!--第二部分图片-->
+    <div><img src="Pictures/02.png" height="450px" /></div>
+    <!--第三部分文字-->
+    <div class="mgt50">
+      <div style="font-size: large">最新模型</div>
+      <div style="font-size: small">全栈自研的新一代模型矩阵</div>
+    </div>
+    <!--第三部分图片-->
+    <div class="flex mgt10">
+      <div class="flex1">
+        <img src="Pictures/003.webp" height="400px" class="yuanjiao" />
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/004.webp" height="400px" class="yuanjiao" />
+      </div>
+      <div class="flex1 mgl20">
+        <video controls autoplay loop class="yuanjiao">
+          <source src="Pictures/1月11日(1).mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/006.webp" height="400px" class="yuanjiao" />
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/007.webp" height="400px" class="yuanjiao" />
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/008.webp" height="400px" class="yuanjiao" />
+      </div>
+    </div>
+    <!--第四部分文字-->
+    <div class="mgt50">
+      <div style="font-size: large">原生应用</div>
+      <div style="font-size: small">基于自研模型能力打造的原生应用</div>
+    </div>
+    <!--第四部分图片-->
+    <div class="flex">
+      <div>
+        <img src="Pictures/0009.png" width="300px" class="yuanjiao mgt20" />
+        <div>MiniMax Agent</div>
+        <div style="font-size: small" class="mgt10">简单指令，无限创造</div>
+      </div>
+      <div class="mgl120">
+        <img src="Pictures/0010.png" width="300px" class="yuanjiao mgt20" />
+        <div>海螺视频</div>
+        <div style="font-size: small" class="mgt10">每个想法都是一部大片</div>
+      </div>
+      <div class="mgl20 mgl120">
+        <img src="Pictures/0011.png" width="300px" class="yuanjiao mgt20" />
+        <div>MiniMax Audio</div>
+        <div style="font-size: small" class="mgt10">超拟人AI声音创意</div>
+      </div>
+      <div class="mgl20 mgl120">
+        <img src="Pictures/0012.png" width="300px" class="yuanjiao mgt20" />
+        <div>海螺视频Agent</div>
+        <div style="font-size: small" class="mgt10">
+          Vibe Videoing 零门槛，成片直出
+        </div>
+      </div>
+      <div class="mgl20 mgl120">
+        <img src="Pictures/0013.png" width="300px" class="yuanjiao mgt20" />
+        <div>星野</div>
+        <div style="font-size: small" class="mgt10">骤入佳境，流连星野</div>
+      </div>
+    </div>
+    <!--第五部分文字-->
+    <div class="mgt50">
+      <div style="font-size: large">新闻动态</div>
+      <div style="font-size: small">
+        结合科研能力和转化创新力量，协力拓展科技前沿，以应对社会尚未解决的需求
+      </div>
+    </div>
+    <div class="flex">
+      <div class="flex1">
+        <img src="Pictures/014.jpg" width="300px" class="yuanjiao mgt20" />
+        <div style="font-size: small">文章</div>
+        <div style="font-size: small" class="mgt10">
+          M2.1-Coding 多语言/多任务与泛化性
+        </div>
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/015.jpg" width="300px" class="yuanjiao mgt20" />
+        <div style="font-size: small">文章</div>
+        <div style="font-size: small" class="mgt10">
+          不完美，但不曾止步：MiniMax的2025
+        </div>
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/016.png" width="300px" class="yuanjiao mgt20" />
+        <div style="font-size: small">文章</div>
+        <div style="font-size: small" class="mgt10">
+          海影节 MiniMax登岛，海螺AI“我的人生电影”完整获奖名单公布！
+        </div>
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/017.png" width="300px" class="yuanjiao mgt20" />
+        <div style="font-size: small">文章</div>
+        <div style="font-size: small" class="mgt10">
+          MiniMax M2：新功能、技术分享、新开源
+        </div>
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/018.jpeg" width="300px" class="yuanjiao mgt20" />
+        <div style="font-size: small">文章</div>
+        <div style="font-size: small" class="mgt10">
+          助力深度研究，秘塔AI搜索接入MiniMax M2
+        </div>
+        <div style="font-size: small" class="mgt10">
+          动态问题链，让复杂问题的研究过程清晰可见
+        </div>
+      </div>
+      <div class="flex1 mgl20">
+        <img src="Pictures/019.png" width="300px" class="yuanjiao mgt20" />
+        <div style="font-size: small">文章</div>
+        <div style="font-size: small" class="mgt10">
+          Mini Price，Max Performance，关于API、编程套餐和Agent
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
